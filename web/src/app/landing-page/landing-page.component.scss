@@ -1,0 +1,65 @@
+
+
+.nav{
+    display: flex;
+    margin: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+    .logo {
+        max-height: 64px;
+        padding-left: 16px;
+    }
+    #btn {
+        display: inline;
+        justify-content: flex-end;
+    }
+    a{
+        font-weight: bold;
+    }
+}
+
+.home {
+    padding-top: 8vh;
+    display: flex;
+    justify-content: space-around;
+    margin: 16px;
+}
+
+
+
+.image-container {
+    margin: 8px;
+    .image {
+    max-height: 70vh;
+}
+}
+
+.text-container {
+    max-width: 40vw;
+    margin: 8px;
+    .title {
+        color: "primary";
+        font-size: 64pt;
+        margin-bottom: 8vh;
+    }
+    .text {
+        font-size: 16pt;
+        text-align: right;
+    }
+}
+
+.container-newpj {
+    margin-top: 16vh;
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-between;
+    max-width: 30vw;
+    border-style: solid;
+    padding: 8px;
+    border-width: 2px;
+    border-radius: 5px;
+    .text{
+        align-self: center;
+        font-size: 16pt;
+    }
+}
