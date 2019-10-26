@@ -1,1 +1,9 @@
 /back/node_modules/*
+/back/*.log
+/back/*.tmp
+/back/*.tmp.*
+/back/log.txt
+/back/.vscode/
+/back/dist
+/back/temp
+/back/tmp

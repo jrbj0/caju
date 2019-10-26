@@ -1,2 +1,3 @@
-const a = 8
-console.log(a)
+import app from './app'
+
+app.listen(8888)
