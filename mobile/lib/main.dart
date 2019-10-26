@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           child: Container(
             child: Padding(
               padding: const EdgeInsets.all(15.0),
-              child: Placeholder(),
+              child: Image.asset('assets/img/drawkit-list-app-monochrome-1200px.png'),
             ),
           ),
         ),
