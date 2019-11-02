@@ -8,11 +8,12 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat-core();
+
 $kaju: (
   primary: mat-color($mat-teal, 500),
   soft-primary: mat-color($mat-teal, 50),
   accent: mat-color($mat-indigo, 800),
-  warn: mat-color($mat-red, 500)
+  warn: mat-color($mat-red, 500),
 );
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss

@@ -1,6 +1,7 @@
+@import '../../styles.scss';
 .example-card {
     width: 256px;
-  }
+}
 mat-icon {
     font-size: 16pt;
 }
@@ -9,7 +10,11 @@ mat-card-content {
 }
 mat-card-title {
     margin-bottom: 8px;
+    color: map-get($kaju, primary)
 }
 mat-card {
     margin: 16px;
+}
+button {
+    color: map-get($kaju, primary)
 }

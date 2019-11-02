@@ -1,5 +1,9 @@
 @import '../../styles.scss';
+
+*{
+    background-color: map-get($kaju, soft-primary);
+}
 .cards-container {
-    margin: 16vh 4vw;
+    padding: 16vh 4vw;
     
 }
