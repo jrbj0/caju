@@ -5,11 +5,13 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
 import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ProjectsViewComponent } from '../projects-view/projects-view.component';
 
 @NgModule({
   declarations: [
     LandingPageComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    ProjectsViewComponent
   ],
   imports: [
     CommonModule,
