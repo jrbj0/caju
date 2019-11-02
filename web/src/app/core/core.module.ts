@@ -6,12 +6,14 @@ import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectsViewComponent } from '../projects-view/projects-view.component';
+import { SearchBarComponent } from '../search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
     LandingPageComponent,
     ProjectCardComponent,
-    ProjectsViewComponent
+    ProjectsViewComponent,
+    SearchBarComponent
   ],
   imports: [
     CommonModule,
