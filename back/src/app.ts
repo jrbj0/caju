@@ -7,14 +7,17 @@ import * as firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
 import 'firebase/firestore'
+import { Transcriptor } from './speech-api/transcriptor';
 
 class App {
     public express: express.Application
     public kajuDatabase: firebase.database.Database
     public kajuFirestore: firebase.firestore.Firestore
     public kajuAuth: firebase.auth.Auth
-
+    public transcriptor: Transcriptor;
+    
     public constructor () {
+      this.transcriptor = new Transcriptor();
       this.express = express()
       this.middlewares()
       this.routes()
@@ -48,6 +51,13 @@ class App {
         return res.send('Hello World')
       })
     }
+
+    public transcribe() {
+      this.transcriptor.start("input/missile.mp4", "kaju-speech-test", "pt-BR");
+    }
 }
 
 export default new App().express
+const app = new App();
+
+app.transcribe();
