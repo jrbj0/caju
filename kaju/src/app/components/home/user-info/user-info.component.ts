@@ -12,4 +12,12 @@ export class UserInfoComponent implements OnInit {
   ngOnInit() {
   }
 
+  get userPhotoUrl():string{
+    return "https://middle.pngfans.com/20190526/yi/user-logo-png-user-computer-icons-clipart-c58837c78f66866c.jpg"
+  }
+
+  get userName():string{
+    return 'José Reginaldo'
+  }
+
 }
