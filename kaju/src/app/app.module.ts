@@ -15,6 +15,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserInfoComponent } from './components/home/user-info/user-info.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuftbBakpdrJzYXOr0L9CkX2nEJF5_8G8",
@@ -29,7 +30,8 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
