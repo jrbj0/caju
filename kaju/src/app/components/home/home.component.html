@@ -1,1 +1,13 @@
-<p>home works!</p>
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name">Kaju</h1>
+</mat-toolbar>
+
+<mat-sidenav-container [style.height]="'calc(100% - 56px)'">
+    <mat-sidenav #snav>
+        Teste1
+    </mat-sidenav>
+    <mat-sidenav-content>
+        Teste
+    </mat-sidenav-content>
+</mat-sidenav-container>
