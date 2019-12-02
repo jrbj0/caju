@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
+import { User } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-user-info',
@@ -6,18 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-info.component.scss']
 })
 export class UserInfoComponent implements OnInit {
+  private userData:User
 
-  constructor() { }
+  constructor(private auth:AuthService) { }
 
   ngOnInit() {
+    this.auth.user$.subscribe(user=>{
+      this.userData=user
+    })
   }
 
   get userPhotoUrl():string{
-    return "https://middle.pngfans.com/20190526/yi/user-logo-png-user-computer-icons-clipart-c58837c78f66866c.jpg"
+    return this.userData.photoURL
   }
 
   get userName():string{
-    return 'José Reginaldo'
+    return this.userData.displayName
   }
 
 }
