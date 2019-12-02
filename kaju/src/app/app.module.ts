@@ -16,6 +16,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserInfoComponent } from './components/home/user-info/user-info.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuftbBakpdrJzYXOr0L9CkX2nEJF5_8G8",
@@ -31,7 +32,8 @@ const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
