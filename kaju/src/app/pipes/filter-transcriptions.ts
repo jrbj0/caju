@@ -10,7 +10,7 @@ export class FilterTranscriptions implements PipeTransform {
         if(!args || !args.length)return values
         else{
             return values.filter((transcription:Transcription)=>{
-                return transcription.name.includes(args) || transcription.transcript.includes(args)
+                return transcription.name.toLowerCase().includes(args.toLowerCase()) || transcription.transcript.toLowerCase().includes(args.toLowerCase())
             })
         }
     }
