@@ -1,1 +1,11 @@
-<p>transcription-list-view works!</p>
+<ul class="transcriptions">
+    <li *ngFor="let transcription of transcriptionsArray"
+    [class.selected]="transcription === selectedTranscription"
+    (click)="onSelect(transcription)">
+        <span class="badge">{{transcription.id}}</span> {{transcription.name}}
+    </li>
+    <li id="addTranscription"
+    (click)="addTranscription()">
+        <i class="material-icons">add</i>
+    </li>
+</ul>
