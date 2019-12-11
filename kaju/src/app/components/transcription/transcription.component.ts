@@ -16,5 +16,8 @@ export class TranscriptionComponent implements OnInit {
 
   ngOnInit() {
   }
+  get selectedTranscription(){
+    if(this.transcriptionListView) return this.transcriptionListView.selectedTranscription
+  }
 
 }

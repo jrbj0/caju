@@ -2,3 +2,8 @@
     #transcriptionListView
     [transcriptionsArray]="transcriptionsArray">
 </app-transcription-list-view>
+<app-transcription-view
+    *ngIf="selectedTranscription"
+    [selectedTranscription]="selectedTranscription">
+
+</app-transcription-view>
