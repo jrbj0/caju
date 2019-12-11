@@ -21,6 +21,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { TranscriptionComponent } from './components/transcription/transcription.component';
 import { TranscriptionListViewComponent } from './components/transcription/transcription-list-view/transcription-list-view.component';
 import { TranscriptionViewComponent } from './components/transcription/transcription-view/transcription-view.component';
+import { FilterTranscriptions } from './pipes/filter-transcriptions';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuftbBakpdrJzYXOr0L9CkX2nEJF5_8G8",
@@ -41,7 +42,8 @@ const firebaseConfig = {
     NotFoundComponent,
     TranscriptionComponent,
     TranscriptionListViewComponent,
-    TranscriptionViewComponent
+    TranscriptionViewComponent,
+    FilterTranscriptions
   ],
   imports: [
     BrowserModule,

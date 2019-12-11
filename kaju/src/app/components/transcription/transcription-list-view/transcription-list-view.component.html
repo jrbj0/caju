@@ -1,5 +1,5 @@
 <ul class="transcriptions">
-    <li *ngFor="let transcription of transcriptionsArray"
+    <li *ngFor="let transcription of transcriptionsArray | filterTranscription:filterWord"
     [class.selected]="transcription === selectedTranscription"
     (click)="onSelect(transcription)">
         <span class="badge">{{transcription.id}}</span> {{transcription.name}}
