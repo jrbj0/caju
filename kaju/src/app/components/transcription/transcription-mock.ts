@@ -1,4 +1,4 @@
-import {Transcription} from '../../../models/transcription.model'
+import {Transcription} from '../../models/transcription.model'
 export const TranscriptionsMock:Transcription[]=[{
     id:1,
     name:"Teste de Transcrição",

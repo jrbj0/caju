@@ -20,6 +20,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TranscriptionComponent } from './components/transcription/transcription.component';
 import { TranscriptionListViewComponent } from './components/transcription/transcription-list-view/transcription-list-view.component';
+import { TranscriptionViewComponent } from './components/transcription/transcription-view/transcription-view.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuftbBakpdrJzYXOr0L9CkX2nEJF5_8G8",
@@ -39,7 +40,8 @@ const firebaseConfig = {
     LandingPageComponent,
     NotFoundComponent,
     TranscriptionComponent,
-    TranscriptionListViewComponent
+    TranscriptionListViewComponent,
+    TranscriptionViewComponent
   ],
   imports: [
     BrowserModule,
