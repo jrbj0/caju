@@ -1,4 +1,12 @@
 <ul class="transcriptions">
+    <li id="searchItem">
+        <form>
+            <mat-form-field>
+                <input matInput [(ngModel)]="filterWord" name="searchValue" placeholder="Buscar Transcrição">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </form>
+    </li>
     <li *ngFor="let transcription of transcriptionsArray | filterTranscription:filterWord"
     [class.selected]="transcription === selectedTranscription"
     (click)="onSelect(transcription)">

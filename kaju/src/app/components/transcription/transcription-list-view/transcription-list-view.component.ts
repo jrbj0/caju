@@ -9,6 +9,7 @@ import { Transcription } from 'src/app/models/transcription.model';
 export class TranscriptionListViewComponent implements OnInit {
   @Input()transcriptionsArray:Transcription[];
   selectedTranscription:Transcription;
+  filterWord:string;
 
   constructor() { }
 

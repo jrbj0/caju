@@ -11,7 +11,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import {MatButtonModule} from '@angular/material/button';
-import {MatSidenavModule} from '@angular/material/sidenav';  
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatInputModule} from '@angular/material/input';   
 
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +23,7 @@ import { TranscriptionComponent } from './components/transcription/transcription
 import { TranscriptionListViewComponent } from './components/transcription/transcription-list-view/transcription-list-view.component';
 import { TranscriptionViewComponent } from './components/transcription/transcription-view/transcription-view.component';
 import { FilterTranscriptions } from './pipes/filter-transcriptions';
+import { FormsModule } from '@angular/forms';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuftbBakpdrJzYXOr0L9CkX2nEJF5_8G8",
@@ -46,6 +48,7 @@ const firebaseConfig = {
     FilterTranscriptions
   ],
   imports: [
+    MatInputModule,
     BrowserModule,
     AppRoutingModule,
     AngularFirestoreModule,
@@ -55,7 +58,8 @@ const firebaseConfig = {
     MatToolbarModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    FormsModule
   ],
   providers: [AngularFireModule, AngularFirestoreModule],
   bootstrap: [AppComponent]
