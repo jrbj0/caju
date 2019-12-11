@@ -18,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserInfoComponent } from './components/home/user-info/user-info.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TranscriptionComponent } from './components/transcription/transcription.component';
+import { TranscriptionListViewComponent } from './components/transcription/transcription-list-view/transcription-list-view.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuftbBakpdrJzYXOr0L9CkX2nEJF5_8G8",
@@ -35,7 +37,9 @@ const firebaseConfig = {
     HomeComponent,
     UserInfoComponent,
     LandingPageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TranscriptionComponent,
+    TranscriptionListViewComponent
   ],
   imports: [
     BrowserModule,
