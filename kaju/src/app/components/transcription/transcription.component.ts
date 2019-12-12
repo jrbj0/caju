@@ -17,14 +17,17 @@ export class TranscriptionComponent implements OnInit {
   constructor(private auth:AuthService,
     private fb:FirebaseUtilsService) {
       this.auth.user$.subscribe(user=>{
-        this.fb.getTranscriptions(user.uid).subscribe(item=>{
-          this.transcriptionsArray=item
-        })
+        if(user){
+          this.fb.getTranscriptions(user.uid).subscribe(item=>{
+            this.transcriptionsArray=item
+          })
+        }else{
+          this.transcriptionsArray=[]
+        }
       })
     }
 
   ngOnInit() { }
-
   get selectedTranscription(){
     if(this.transcriptionListView) return this.transcriptionListView.selectedTranscription
   }
