@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Transcription } from 'src/app/models/transcription.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-transcription-list-view',
@@ -11,7 +12,7 @@ export class TranscriptionListViewComponent implements OnInit {
   selectedTranscription:Transcription;
   filterWord:string;
 
-  constructor() { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
   }
@@ -19,7 +20,7 @@ export class TranscriptionListViewComponent implements OnInit {
     this.selectedTranscription = this.selectedTranscription===transcription?null:transcription;
   }
   addTranscription(){
-    //function to generate transcription
+    this.router.navigateByUrl('/upload');
   }
 
 }

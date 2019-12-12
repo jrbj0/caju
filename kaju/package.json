@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node dist/upload-script.ts",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prestart": "tsc && copyfiles *.html dist/",
-    "start": "node dist/upload-script.ts"
+    "prestart": "tsc && copyfiles *.html dist/"
   },
   "private": true,
   "dependencies": {
@@ -25,7 +24,7 @@
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
     "@google-cloud/common": "2.2.5",
-    "@google-cloud/speech": "~3.4.0",
+    "@google-cloud/speech": "^3.4.0",
     "@google-cloud/storage": "^4.1.2",
     "@types/jquery": "^3.3.31",
     "express": "^4.17.1",
