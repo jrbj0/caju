@@ -7,3 +7,5 @@
 /back/dist
 /back/temp
 /back/tmp
+/node_modules/*
+yarn.lock

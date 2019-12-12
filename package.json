@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jpmagi10/caju/issues"
   },
-  "homepage": "https://github.com/jpmagi10/caju#readme"
+  "homepage": "https://github.com/jpmagi10/caju#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2"
+  }
 }
