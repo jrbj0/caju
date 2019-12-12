@@ -1,9 +1,10 @@
 <app-transcription-list-view
+    id="listView"
     #transcriptionListView
     [transcriptionsArray]="transcriptionsArray">
 </app-transcription-list-view>
 <app-transcription-view
+    id="transcriptionView"
     *ngIf="selectedTranscription"
     [selectedTranscription]="selectedTranscription">
-
 </app-transcription-view>
