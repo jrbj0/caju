@@ -1,0 +1,18 @@
+<div id="searchItem">
+    <form>
+        <mat-form-field>
+            <input matInput [(ngModel)]="filterWord" name="searchValue" placeholder="Buscar Transcrição">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </form>
+</div>
+<ul class="transcriptions">
+    <li *ngFor="let transcription of transcriptionsArray | filterTranscription:filterWord"
+    [class.selected]="transcription === selectedTranscription"
+    (click)="onSelect(transcription)">
+        <span class="badge">{{transcription.id}}</span> {{transcription.name}}
+    </li>
+</ul>
+<div id="addTranscription">
+    <button mat-button (click)="addTranscription()"> <i class="material-icons">add</i></button>
+</div>
