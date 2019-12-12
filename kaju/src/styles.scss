@@ -31,3 +31,6 @@ $kaju-theme: mat-light-theme($kaju-primary, $kaju-accent, $kaju-warn);
 
 html, body { height: 100%; }
 body { margin: 0;font-family: 'Open Sans', 'sans-serif' }
+.highlight{
+    background-color: rgb(255, 255, 0,.6)
+}
