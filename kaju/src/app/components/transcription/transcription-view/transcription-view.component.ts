@@ -23,5 +23,11 @@ export class TranscriptionViewComponent implements OnInit {
   get ocurrences(){
     return this.selectedTranscription.transcript.split(this.filterWord).length-1
   }
+  get showOcurrences(){
+    if(this.filterWord){
+      return this.filterWord.length>0 && this.ocurrences>0
+    }
+    return false
+  }
 
 }

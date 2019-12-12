@@ -1,6 +1,6 @@
-<mat-grid-list [cols]="ocurrences>0?3:2" rowHeight="40px">
+<mat-grid-list [cols]="showOcurrences?3:2" rowHeight="40px">
     <mat-grid-tile
-        *ngIf="ocurrences>0"
+        *ngIf="showOcurrences"
         [colspan]="1"
         [rowspan]="1">
         {{ocurrences}} {{ocurrences>1?"ocorrências":"ocorrência"}} de busca
