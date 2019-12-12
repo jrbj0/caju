@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name">Kaju</h1>
+</mat-toolbar>
+
+<mat-sidenav-container [style.height]="'calc(100% - 56px)'">
+    <mat-sidenav #snav [style.width]="'200px'">
+        <app-user-info></app-user-info>
+        <button mat-button (click)="auth.signOut()" style="left: 34%;bottom: 10px;position: absolute;">Sair</button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-transcription></app-transcription>
+    </mat-sidenav-content>
+</mat-sidenav-container>
