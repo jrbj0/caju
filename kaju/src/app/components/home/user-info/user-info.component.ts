@@ -17,6 +17,7 @@ export class UserInfoComponent implements OnInit {
       this.userData=user
     })
   }
+  //
 
   get userPhotoUrl():string{
     return this.userData.photoURL
