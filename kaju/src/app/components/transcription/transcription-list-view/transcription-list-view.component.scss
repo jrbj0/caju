@@ -54,9 +54,16 @@ ul.transcriptions{
 }
 #addTranscription{
     text-align: center;
-    background-color: #66bb6a;
-    color: white;
+    background-color:#66bb6a;
+    color:white;
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    border-radius: 20px;
     &:hover{
         background-color: #43a047
+    }
+    button{
+        width: 100%;
     }
 }
