@@ -1,1 +1,19 @@
+<mat-grid-list cols="3" rowHeight="40px">
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="1">
+            {{countWords}}
+            {{countWords>1?"Palavras":"Palavra"}} 
+    </mat-grid-tile>
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="1">
+        Precisão de {{conficende}}%
+    </mat-grid-tile>
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="1">
+         Segundos
+    </mat-grid-tile>
+</mat-grid-list>
 {{selectedTranscription.transcript}}

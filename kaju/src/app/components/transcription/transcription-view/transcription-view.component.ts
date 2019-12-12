@@ -13,5 +13,11 @@ export class TranscriptionViewComponent implements OnInit {
 
   ngOnInit() {
   }
+  get countWords(){
+    return this.selectedTranscription.transcript.split(" ").length
+  }
+  get conficende(){
+    return (this.selectedTranscription.confidence*100).toFixed(2)
+  }
 
 }
