@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { UploadComponent } from './upload/upload.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path:'',component:LandingPageComponent},
   {path:'home',component:HomeComponent},
   {path: '404', component: NotFoundComponent},
+  {path: 'upload', component: UploadComponent},
   {path: '**', redirectTo: '/404'}
 ];
 
