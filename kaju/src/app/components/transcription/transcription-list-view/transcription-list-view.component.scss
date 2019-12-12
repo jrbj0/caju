@@ -3,6 +3,8 @@ ul.transcriptions{
     list-style-type: none;
     padding: 0;
     width: 15em;
+    overflow: auto;
+    height: 85vh;
     & li{
         cursor: pointer;
         position: relative;

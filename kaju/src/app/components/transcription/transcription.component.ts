@@ -19,7 +19,7 @@ export class TranscriptionComponent implements OnInit {
       this.auth.user$.subscribe(user=>{
         if(user){
           this.fb.getTranscriptions(user.uid).subscribe(item=>{
-            this.transcriptionsArray=item
+            this.transcriptionsArray=item.sort((a,b)=>a.id<b.id?-1:1)
           })
         }else{
           this.transcriptionsArray=[]

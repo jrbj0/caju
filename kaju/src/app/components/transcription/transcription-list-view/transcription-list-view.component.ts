@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Transcription } from 'src/app/models/transcription.model';
+import { FirebaseUtilsService } from 'src/app/services/firebase-utils.service';
 
 @Component({
   selector: 'app-transcription-list-view',
@@ -11,7 +12,7 @@ export class TranscriptionListViewComponent implements OnInit {
   selectedTranscription:Transcription;
   filterWord:string;
 
-  constructor() { }
+  constructor(private fb:FirebaseUtilsService) { }
 
   ngOnInit() {
   }
@@ -19,7 +20,12 @@ export class TranscriptionListViewComponent implements OnInit {
     this.selectedTranscription = this.selectedTranscription===transcription?null:transcription;
   }
   addTranscription(){
-    //function to generate transcription
+    this.fb.addTranscription({
+      id:this.transcriptionsArray.length+1,
+      name:"teste",
+      confidence:0.8,
+      transcript:"testando"
+    })
   }
 
 }

@@ -8,10 +8,15 @@ import { Transcription } from '../models/transcription.model';
   providedIn: 'root'
 })
 export class FirebaseUtilsService {
+  private userId:string
 
   constructor(private db:AngularFirestore) { }
 
   getTranscriptions(userId):Observable<Transcription[]>{
+    this.userId=userId
     return this.db.doc(`users/${userId}`).collection<Transcription>(`transcriptions`).valueChanges()
+  }
+  addTranscription(item:Transcription){
+    return this.db.doc(`users/${this.userId}`).collection<Transcription>(`transcriptions`).add(item)
   }
 }
