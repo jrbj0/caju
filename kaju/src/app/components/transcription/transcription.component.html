@@ -4,6 +4,7 @@
     [transcriptionsArray]="transcriptionsArray">
 </app-transcription-list-view>
 <app-transcription-view
+    [filterWord]="transcriptionListView.filterWord"
     id="transcriptionView"
     *ngIf="selectedTranscription"
     [selectedTranscription]="selectedTranscription">
