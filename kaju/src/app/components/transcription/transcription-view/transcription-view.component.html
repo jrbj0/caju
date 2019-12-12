@@ -1,1 +1,20 @@
+<mat-grid-list [cols]="showOcurrences?3:2" rowHeight="40px">
+    <mat-grid-tile
+        *ngIf="showOcurrences"
+        [colspan]="1"
+        [rowspan]="1">
+        {{ocurrences}} {{ocurrences>1?"ocorrências":"ocorrência"}} de busca
+    </mat-grid-tile>
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="1">
+            {{countWords}}
+            {{countWords>1?"Palavras":"Palavra"}} 
+    </mat-grid-tile>
+    <mat-grid-tile
+        [colspan]="1"
+        [rowspan]="1">
+        Precisão de {{conficende}}%
+    </mat-grid-tile>
+</mat-grid-list>
 {{selectedTranscription.transcript}}

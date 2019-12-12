@@ -3,6 +3,8 @@ ul.transcriptions{
     list-style-type: none;
     padding: 0;
     width: 15em;
+    overflow: auto;
+    height: 64vh;
     & li{
         cursor: pointer;
         position: relative;
@@ -39,23 +41,22 @@ ul.transcriptions{
             margin-right: .8em;
             border-radius: 4px 0 0 4px;
         }
-        &#addTranscription{
-            text-align: center;
-            background-color: #66bb6a;
-            color: white;
-            &:hover{
-                background-color: #43a047
-            }
+    }
+}
+#searchItem{
+    height: 3em;
+    & form{
+        width: 100%;
+        & mat-form-field{
+            width: 100%;
         }
-        &#searchItem{
-            height: 3em;
-            & form{
-                width: 100%;
-                & mat-form-field{
-                    width: 100%;
-                }
-            }
-
-        }
+    }
+}
+#addTranscription{
+    text-align: center;
+    background-color: #66bb6a;
+    color: white;
+    &:hover{
+        background-color: #43a047
     }
 }

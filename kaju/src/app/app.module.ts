@@ -14,6 +14,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatInputModule} from '@angular/material/input';   
 
+
+import {MatGridListModule} from '@angular/material/grid-list'; 
+
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserInfoComponent } from './components/home/user-info/user-info.component';
@@ -51,6 +54,7 @@ const firebaseConfig = {
   ],
   imports: [
     MatInputModule,
+    MatGridListModule,
     BrowserModule,
     AppRoutingModule,
     AngularFirestoreModule,

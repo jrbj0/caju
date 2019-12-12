@@ -3,7 +3,7 @@ export interface Transcription{
     name:string;
     transcript:string;
     confidence:number;
-    words:TranscriptionWords[]
+    words?:TranscriptionWords[]
 }
 export interface TranscriptionWords{
     word:string;
