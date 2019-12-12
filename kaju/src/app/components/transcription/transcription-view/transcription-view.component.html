@@ -1,19 +1,32 @@
-<mat-grid-list [cols]="showOcurrences?3:2" rowHeight="40px">
+<mat-grid-list
+    [style.background]="'white'"
+    [cols]="showOcurrences?3:2"
+    [style.borderRadius]="'5px'"
+    rowHeight="40px">
     <mat-grid-tile
         *ngIf="showOcurrences"
         [colspan]="1"
-        [rowspan]="1">
+        [rowspan]="1"
+        [style.background]="'#2b827a'"
+        [style.color]="'white'"
+        [style.borderRadius]="'5px 0 0 0'">
         {{ocurrences}} {{ocurrences>1?"ocorrências":"ocorrência"}} de busca
     </mat-grid-tile>
     <mat-grid-tile
         [colspan]="1"
-        [rowspan]="1">
+        [rowspan]="1"
+        [style.background]="'#2b827a'"
+        [style.color]="'white'"
+        [style.borderRadius]="showOcurrences?'0':'5px 0 0 0'">
             {{countWords}}
             {{countWords>1?"Palavras":"Palavra"}} 
     </mat-grid-tile>
     <mat-grid-tile
         [colspan]="1"
-        [rowspan]="1">
+        [rowspan]="1"
+        [style.background]="'#2b827a'"
+        [style.color]="'white'"
+        [style.borderRadius]="'0 5px 0 0'">
         Precisão de {{conficende}}%
     </mat-grid-tile>
 </mat-grid-list>

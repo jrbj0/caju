@@ -1,10 +1,9 @@
 ul.transcriptions{
-    margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
     width: 15em;
     overflow: auto;
-    height: 64vh;
+    height: 60vh;
     & li{
         cursor: pointer;
         position: relative;
@@ -14,6 +13,11 @@ ul.transcriptions{
         padding: .3em 0;
         height: 1.6em;
         border-radius: 4px;
+        width: 85%;
+        margin-left: 1em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         &:hover:not(#addTranscription):not(#searchItem){
             color: black;
             background-color: #ddd;
@@ -32,7 +36,7 @@ ul.transcriptions{
             font-size: small;
             color: white;
             padding: 0.8em 0.7em 0 0.7em;
-            background-color:#405061;
+            background-color:#2b827a;
             line-height: 1em;
             position: relative;
             left: -1px;
@@ -45,6 +49,9 @@ ul.transcriptions{
 }
 #searchItem{
     height: 3em;
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 85%;
     & form{
         width: 100%;
         & mat-form-field{
