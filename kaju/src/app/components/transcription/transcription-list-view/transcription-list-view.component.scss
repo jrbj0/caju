@@ -15,16 +15,16 @@ ul.transcriptions{
         height: 1.6em;
         border-radius: 4px;
         &:hover:not(#addTranscription):not(#searchItem){
-            color: #607d8b;
+            color: black;
             background-color: #ddd;
             left: .1em;
         }
         &.selected{
             background-color: #cfd8dc;
-            color: white;
+            color: black;
             &:hover{
                 background-color: #bbd8dc;
-                color: white;
+                color: black;
             }
         }
         & span.badge{

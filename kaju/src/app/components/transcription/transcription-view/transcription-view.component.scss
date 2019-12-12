@@ -1,4 +1,8 @@
 #transcripted{
     overflow: auto;
     height: 77vh;
+    & p{
+        margin: 2em;
+        text-align: justify;
+    }
 }
