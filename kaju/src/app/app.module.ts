@@ -27,6 +27,7 @@ import { TranscriptionListViewComponent } from './components/transcription/trans
 import { TranscriptionViewComponent } from './components/transcription/transcription-view/transcription-view.component';
 import { FilterTranscriptions } from './pipes/filter-transcriptions';
 import { FormsModule } from '@angular/forms';
+import { UploadComponent } from './upload/upload.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuftbBakpdrJzYXOr0L9CkX2nEJF5_8G8",
@@ -48,7 +49,8 @@ const firebaseConfig = {
     TranscriptionComponent,
     TranscriptionListViewComponent,
     TranscriptionViewComponent,
-    FilterTranscriptions
+    FilterTranscriptions,
+    UploadComponent
   ],
   imports: [
     MatInputModule,
